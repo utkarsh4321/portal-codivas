@@ -16,15 +16,17 @@ const Header = () => {
                 </InputGroup>
             </div>
             <div className="user">
-                <div className="notifications">
+                <div className="notifications icon-button">
                     <FontAwesomeIcon icon={["fa", "bell"]} />
                     </div>
-                <div className="messages">
+                <div className="messages icon-button">
                     <FontAwesomeIcon icon={["fa", "paper-plane"]} />
                     </div>
                 <div className="profile">
                     <span className="name">Name</span>
-                    <FontAwesomeIcon icon={["fa", "user-alt"]} />
+                    <div className="profile-icon icon-button">
+                        <FontAwesomeIcon icon={["fa", "user-alt"]} />
+                    </div>
                 </div>
             </div>
         </header>

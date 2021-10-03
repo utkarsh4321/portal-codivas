@@ -15,8 +15,8 @@
     @include flex-center;
     flex: 0 0 120px;
     padding: 2rem;
-    width: object-fit;
-    
+    width: 100%;
+    margin-top: 1rem;
     img {
         width:100%;
     }

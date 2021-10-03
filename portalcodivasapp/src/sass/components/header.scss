@@ -3,8 +3,7 @@
 
 .header {
     position: sticky;
-    display: grid;
-    grid-template-columns: [search] 20% auto [user] 20%;
+    display: flex;
     top: 0;
     height: 80px;
     max-width: 100%;
@@ -14,8 +13,10 @@
 .search {
     @include flex-center;
     height: 100%;
-    width: 100%;
-    grid-column: search;
+    min-width: 260px;
+    max-width: 320px;
+    flex: 1 1;
+    margin-right: auto;
     .input-group {
         input, .input-group-text {
             border-radius: 50vmin;
@@ -23,7 +24,23 @@
         .input-group-text {
             background-color: $color-main;
             color: $color-hilight;
+            cursor: pointer;
+            transition: color 250ms ease, background-color 250ms ease;
+            &:hover {
+                color: $color-main;
+                background-color: $color-hilight; 
+            }
         }
+    }
+}
+
+.icon-button {
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 250ms ease;
+    &:hover {
+      color: $color-hilight;
     }
 }
 
@@ -34,10 +51,16 @@
     grid-column: user;
     display: flex;
     align-items: center;
+    min-width: fit-content;
+    flex: 1 1 25%;
+    margin-left: auto;
     
     div {
         font-size: 2rem;
-        margin: 0 2rem;
+        margin: 0 1rem;
+    }
+    .notifications {
+        margin-left: auto;
     }
     .messages {
         flex: 0 0 2rem;
@@ -45,7 +68,7 @@
     .profile {
         display:flex;
         justify-content: space-evenly;
-        margin-left: auto;
+        align-items: center;
         flex: 0 0 2rem;
         .name {
             margin-right: 1rem;
