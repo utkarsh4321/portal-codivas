@@ -1,0 +1,23 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    height: 100%;
+    flex: 0 0 10%;
+    background-image: url('../../images/navigation-bg.png');
+    background-color: $color-main;
+}
+
+.nav-logo {
+    @include flex-center;
+    flex: 0 0 120px;
+    padding: 2rem;
+    width: object-fit;
+    
+    img {
+        width:100%;
+    }
+}
