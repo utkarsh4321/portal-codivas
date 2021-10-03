@@ -1,4 +1,5 @@
 @use 'reset';
+@use 'mixins' as *;
 @use 'variables' as *;
 
 @use './components/navigation';
@@ -9,6 +10,12 @@
 
 body {
   font-family: 'Space Grotesk', sans-serif;
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 54px;
+  }
 }
 
 .layout {
@@ -19,12 +26,16 @@ body {
 
 .main-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1 1 100%;
   height: 100%;
   overflow: hidden;
 }
 
 .main-content {
+  @include flex-center;
   height: 100%;
   overflow-x: hidden;
   background-image: url('https://picsum.photos/800/600');

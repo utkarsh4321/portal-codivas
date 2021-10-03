@@ -8,6 +8,7 @@
     height: 80px;
     max-width: 100%;
     width: 100%;
+    @include layoutShadow('down');
 }
 
 .search {
@@ -17,6 +18,10 @@
     max-width: 320px;
     flex: 1 1;
     margin-right: auto;
+    .form-control:focus {
+        border-color: $color-hilight;
+        box-shadow: none;
+    }
     .input-group {
         input, .input-group-text {
             border-radius: 50vmin;
@@ -25,7 +30,7 @@
             background-color: $color-main;
             color: $color-hilight;
             cursor: pointer;
-            transition: color 250ms ease, background-color 250ms ease;
+            transition: $link-transition;
             &:hover {
                 color: $color-main;
                 background-color: $color-hilight; 
@@ -38,7 +43,7 @@
     padding: 1rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: color 250ms ease;
+    transition: $link-transition;
     &:hover {
       color: $color-hilight;
     }

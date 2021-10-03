@@ -1,3 +1,6 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
 .footer {
     display:flex;
     justify-content: space-between;
@@ -5,6 +8,7 @@
     bottom: 0;
     min-height: 144px;
     background-color: white;
+    @include layoutShadow('up');
     img {
         margin: auto;
         min-width: 180px;
@@ -22,6 +26,11 @@
     padding: 1rem 1rem 1rem 0;
     gap: .5rem;
     li {
+        transition: $link-transition;
+        color: $color-font-lighter;
         cursor: pointer;
+        &:hover {
+            color: $color-font;
+        }
     }
 }

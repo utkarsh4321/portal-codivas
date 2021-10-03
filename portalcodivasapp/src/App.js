@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, useParams } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import Navigation from "./Components/Navigation";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
@@ -20,12 +20,23 @@ function App() {
 
   return (
     <div className="layout">
-      <Navigation />
-      <div className="main-container">
-        <Header />
-        <Main />
-        <Footer />
-      </div>
+      <Router>
+        <Navigation>
+          
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+          
+        </Navigation>
+        <div className="main-container">
+          <Header />
+          <Main />
+          <Footer />
+        </div>
+      </Router>
     </div>
   );
 }

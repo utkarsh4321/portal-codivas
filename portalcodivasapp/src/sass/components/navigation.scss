@@ -7,17 +7,38 @@
     min-width: 280px;
     height: 100%;
     flex: 0 0 10%;
-    background-image: url('../../images/navigation-bg.png');
     background-color: $color-main;
+    background-image: url('../../images/navigation-bg.png');
+    background-blend-mode: exclusion;
+    border-right: 2px solid $color-font-lighter;
 }
 
 .nav-logo {
     @include flex-center;
     flex: 0 0 120px;
     padding: 2rem;
-    width: 100%;
     margin-top: 1rem;
     img {
-        width:100%;
+        min-width: 180px;
+    }
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    
+    font-size: 2rem;
+    li {
+        padding: 1rem;
+        a {
+            transition: $link-transition;
+            text-align: left;
+            color: #efe2fb;
+            text-decoration: none;
+            &:hover {
+                color: $color-hilight;
+            }
+        }
     }
 }
