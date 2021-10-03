@@ -1,0 +1,9 @@
+@use '../mixins' as *;
+
+.main-content {
+    @include flex-center;
+    height: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
