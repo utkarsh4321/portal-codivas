@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+footer{
+    position: absolute;
+    padding-top: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(255, 255, 255);
+}
+footer img{
+    margin-left: 45%;
+    padding-top: 35px;
+}
+footer p{
+    position: absolute;
+    top: 85px;
+    margin-left: 2%;
+    font-size: 14px;
+    color: rgb(131, 133, 130);
+    font-weight: 600;
+}
+footer span{
+    color: rgb(25, 125, 255);
+}
+footer div{
+    position: absolute;
+    top: 85px;
+    margin-left: 88%;
+    font-size: 14px;
+}
+footer div a{
+    color: rgb(131, 133, 130);
+    text-decoration: none;
+    padding-right: 5px;
+}
