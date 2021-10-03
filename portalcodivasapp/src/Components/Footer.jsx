@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer(){
     const currentYear = new Date().getFullYear();
     return (
     <footer>
         <img src="logo.png" width={110} alt="" />
-        <p>© {currentYear} <span>Codivas</span> </p>
+        <p>© {currentYear} <Link to="/">Codivas</Link> </p>
         <div>
         <a href="#">Codivas</a>
         <a href="#">Sobre Nos</a>
