@@ -10,6 +10,8 @@
     background-color: white;
     @include layoutShadow('up');
     img {
+        position: absolute;
+        inset: 0;
         margin: auto;
         min-width: 180px;
     }

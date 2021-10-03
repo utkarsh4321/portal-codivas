@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import Navigation from "./Components/Navigation";
 import Header from "./Components/Header";
-import Main from "./Components/Main";
+import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
 import { 
@@ -19,25 +19,26 @@ function App() {
   dom.watch()
 
   return (
-    <div className="layout">
-      <Router>
-        <Navigation>
-          
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-          
-        </Navigation>
-        <div className="main-container">
-          <Header />
-          <Main />
-          <Footer />
-        </div>
-      </Router>
-    </div>
+    <Router>
+      <div className="layout">
+        
+          <Navigation>
+            
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+            
+          </Navigation>
+          <div className="main-container">
+            <Header />
+            <Content />
+            <Footer />
+          </div>
+      </div>
+    </Router>
   );
 }
 
