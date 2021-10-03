@@ -42,3 +42,34 @@
         }
     }
 }
+
+// MOBILE NAV
+#burger-menu {
+    display: none;
+    margin-left: 1rem;
+}
+#burger-dropdown {
+    height: 100%;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: $color-main;
+}
+.burger-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: $link-transition;
+    color: $color-main;
+    &:hover {
+        color: $color-hilight;
+    }
+}
+
+@media (max-width:800px) {
+    #burger-menu {
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+}

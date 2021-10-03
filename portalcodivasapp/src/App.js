@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Navigation from "./Components/Navigation";
 import Header from "./Components/Header";
@@ -10,30 +10,23 @@ import {
   faSearch,
   faPaperPlane,
   faBell,
-  faUserAlt
+  faUserAlt,
+  faBars
  } from '@fortawesome/free-solid-svg-icons'
 
  import './sass/index.scss';
 
 function App() {
-  library.add([faSearch, faPaperPlane, faBell, faUserAlt])
+  library.add([faSearch, faPaperPlane, faBell, faUserAlt, faBars])
   dom.watch()
-
+  // Links get added to mobile and normal nav
+  const links = [{path: "/", text: "Home"}, {path: "/projects", text: "Projects"}]
   return (
     <Router>
       <div className="layout">
-          <Navigation>
-            
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/projects">Projects</Link>
-              </li>
-            
-          </Navigation>
+          <Navigation links={links} />
           <div className="main-container">
-            <Header />
+            <Header links={links} />
             <Content />
             <Footer />
           </div>

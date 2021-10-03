@@ -2,10 +2,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Header = () => {
-    
+import MobileNavigation from './MobileNavigation';
+
+const Header = ({links}) => {
     return (
         <header className="header">
+            <MobileNavigation links={links}/>
             <div className="search">
                 <InputGroup className="mx-3">
                     <FormControl
