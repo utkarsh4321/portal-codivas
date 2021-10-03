@@ -1,0 +1,54 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.header {
+    position: sticky;
+    display: grid;
+    grid-template-columns: [search] 20% auto [user] 20%;
+    top: 0;
+    height: 80px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.search {
+    @include flex-center;
+    height: 100%;
+    width: 100%;
+    grid-column: search;
+    .input-group {
+        input, .input-group-text {
+            border-radius: 50vmin;
+        }
+        .input-group-text {
+            background-color: $color-main;
+            color: $color-hilight;
+        }
+    }
+}
+
+.user {
+    color: $color-main;
+    height: 100%;
+    width: 100%;
+    grid-column: user;
+    display: flex;
+    align-items: center;
+    
+    div {
+        font-size: 2rem;
+        margin: 0 2rem;
+    }
+    .messages {
+        flex: 0 0 2rem;
+    }
+    .profile {
+        display:flex;
+        justify-content: space-evenly;
+        margin-left: auto;
+        flex: 0 0 2rem;
+        .name {
+            margin-right: 1rem;
+        }
+    }
+}
