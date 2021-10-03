@@ -22,6 +22,11 @@ body{
     line-height: 1;
 }
 
+a, a:hover {
+    text-decoration: none;
+    color: currentColor;
+}
+
 ol, ul{
     list-style: none;
 }
