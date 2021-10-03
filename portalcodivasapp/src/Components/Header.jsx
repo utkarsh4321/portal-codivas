@@ -12,16 +12,18 @@ const Header = () => {
                     aria-label="Search"
                     aria-describedby="search-input"
                     />
-                    <InputGroup.Text id="search-input"><FontAwesomeIcon icon={["fa", "search"]} /></InputGroup.Text>
+                    <InputGroup.Text id="search-input">
+                        <FontAwesomeIcon icon={["fa", "search"]} />
+                    </InputGroup.Text>
                 </InputGroup>
             </div>
             <div className="user">
                 <div className="notifications icon-button">
                     <FontAwesomeIcon icon={["fa", "bell"]} />
-                    </div>
+                </div>
                 <div className="messages icon-button">
                     <FontAwesomeIcon icon={["fa", "paper-plane"]} />
-                    </div>
+                </div>
                 <div className="profile">
                     <span className="name">Name</span>
                     <div className="profile-icon icon-button">

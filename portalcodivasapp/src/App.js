@@ -22,7 +22,6 @@ function App() {
   return (
     <Router>
       <div className="layout">
-        
           <Navigation>
             
               <li>
