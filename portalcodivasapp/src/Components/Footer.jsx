@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 function Footer(){
     const currentYear = new Date().getFullYear();
     return (
-    <footer>
-        <img src="codivaspreto.png" width={110} alt="" />
-        <p>© {currentYear} <Link to="/">Codivas</Link> </p>
-        <div>
-        <a href="#">Codivas</a>
-        <a href="#">Sobre Nos</a>
-        <a href="#">Blogs</a>
-        </div>
+    <footer className="footer">
+        <img src="logo.png" width={110} alt="" />
+        <span className="copyright">© {currentYear} <Link to="/">Codivas</Link> </span>
+        <ul className="footer-links">
+            <li>Codivas</li>
+            <li>Sobre Nos</li>
+            <li>Blogs</li>
+        </ul>
     </footer>
 );
     }
