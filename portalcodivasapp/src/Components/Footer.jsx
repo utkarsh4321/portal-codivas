@@ -8,9 +8,15 @@ function Footer(){
         <img src="logo.png" width={110} alt="" />
         <span className="copyright">© {currentYear} <Link to="/">Codivas</Link> </span>
         <ul className="footer-links">
-            <li>Codivas</li>
-            <li>Sobre Nos</li>
-            <li>Blogs</li>
+            <li>
+                <Link to="/">Codivas</Link>
+            </li>
+            <li>
+                <a href="https://codivas.com.br" target="_blank">SobreNos</a>
+            </li>
+            <li>
+                <a href="https://blog.codivas.com.br" target="_blank">Blogs</a>
+            </li>
         </ul>
     </footer>
 );
