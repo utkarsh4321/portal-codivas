@@ -12,10 +12,10 @@ function Footer(){
                 <Link to="/">Codivas</Link>
             </li>
             <li>
-                <a href="https://codivas.com.br" target="_blank">SobreNos</a>
+                <a href="https://codivas.com.br" target="_blank" rel="noreferrer">SobreNos</a>
             </li>
             <li>
-                <a href="https://blog.codivas.com.br" target="_blank">Blogs</a>
+                <a href="https://blog.codivas.com.br" target="_blank" rel="noreferrer">Blogs</a>
             </li>
         </ul>
     </footer>
