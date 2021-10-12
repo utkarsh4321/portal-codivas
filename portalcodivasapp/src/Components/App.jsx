@@ -4,6 +4,7 @@ import Navigation from './Navigation';
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
+import Login from './pages/Login';
 
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -16,6 +17,7 @@ import {
 
 import '../sass/index.scss';
 
+
 function App() {
   library.add([faSearch, faPaperPlane, faBell, faUserAlt, faBars]);
   dom.watch();
@@ -23,6 +25,8 @@ function App() {
   const links = [
     { path: '/', text: 'Home' },
     { path: '/projects', text: 'Projects' },
+     { path: '/Login', text: 'Login' },
+    
   ];
   return (
     <Router>
@@ -30,6 +34,7 @@ function App() {
         <Navigation links={links} />
         <div className='main-container'>
           <Header links={links} />
+          <Login />
           <Content />
           <Footer />
         </div>

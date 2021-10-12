@@ -1,7 +1,8 @@
 @use '../variables' as *;
 @use '../mixins' as *;
+
 .footer {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     position: sticky;
     bottom: 0;
@@ -15,21 +16,21 @@
         min-width: 180px;
     }
 }
-
 .copyright {
     padding: 1rem 0 1rem 1rem;
     align-self: flex-end;
     color: $color-font;
 }
 
-footer span {
+footer span{
     color: rgb(25, 125, 255);
 }
 
+
 .footer-links {
-    height: 100%;
+    height:100%;
     display: flex;
-    align-items: flex-end;
+    align-items:flex-end;
     padding: 1rem 1rem 1rem 0;
     gap: .5rem;
     li {
@@ -40,7 +41,7 @@ footer span {
             color: $color-font;
         }
     }
-}
+} 
 
 @media screen and (max-width:480px) {
     .footer img {
