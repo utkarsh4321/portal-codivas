@@ -1,4 +1,4 @@
-import logo from '../images/codivas-light.png';
+import logo from '../Assets/Images/codivas-light.png';
 import { Link } from "react-router-dom";
 
 const Navigation = ({links}) => {

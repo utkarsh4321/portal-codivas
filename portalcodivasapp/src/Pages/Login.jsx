@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import '../../sass/components/login.scss';
+// import '../Assets/Sass/components/login.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -18,7 +18,7 @@ function Login() {
                 <input type="text" name="" placeholder="Username" />
                 <input type="password" name="" placeholder="Password" />
                 <a class="forgot text-muted" href="#">
-                  Forgot password?
+                  Esqueceu a senha?
                 </a>
                 <input type="submit" name="" value="Login" href="#" />
                 <div class="col-md-12">
