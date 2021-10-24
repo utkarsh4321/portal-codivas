@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#78529C), to(#172B4D));
   background: linear-gradient(to bottom, #78529C, #172B4D);
 }
 
@@ -18,12 +19,13 @@ body {
   left: 50%;
   background: #ffffff;
   text-align: center;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
   margin-top: 100px;
 }
 
-.box input[type=text],
-.box input[type=password] {
+.box input[type="text"],
+.box input[type="password"] {
   border: 0;
   background: none;
   display: block;
@@ -35,6 +37,7 @@ body {
   outline: none;
   color: #0a0a0a;
   border-radius: 24px;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
@@ -44,13 +47,13 @@ body {
   font-weight: 500;
 }
 
-.box input[type=text]:focus,
-.box input[type=password]:focus {
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
   width: 300px;
   border-color: #540395;
 }
 
-.box input[type=submit] {
+.box input[type="submit"] {
   border: 0;
   background: none;
   display: block;
@@ -61,11 +64,12 @@ body {
   outline: none;
   color: #070707;
   border-radius: 24px;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
   cursor: pointer;
 }
 
-.box input[type=submit]:hover {
+.box input[type="submit"]:hover {
   background: #540395;
 }
 
@@ -127,12 +131,16 @@ a.socialIcon:hover,
 
 .social-circle li a:hover i,
 .triggeredHover {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .social-circle i {
   color: #4b037a;
+  -webkit-transition: all 0.8s;
   transition: all 0.8s;
   transition: all 0.8s;
-}/*# sourceMappingURL=login.css.map */
+}
+/*# sourceMappingURL=login.css.map */
