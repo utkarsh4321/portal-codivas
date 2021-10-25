@@ -1,17 +1,25 @@
 import { Switch, Route } from "react-router-dom";
+import Links from "../Routes";
+
+const getRouter = () =>{
+
+    return Links.filter(path => path.layout === "/admin").map(path =>{
+        return  ( 
+        <Route path={path.layout + path.path}>
+        <path.component/>
+
+         </Route>
+        )
+    } )
+}
 
 const Content = () => {
     return (
         <main className="main-content">
             <Switch>
-                <Route exact path="/">
-                    <h2>HOME</h2>
-                    {/* IMPORT & INSERT PAGE CONTENT HERE */}
-                </Route>
-                <Route path="/projects">
-                    <h2>PROJECTS</h2>
-                    {/* IMPORT & INSERT PAGE CONTENT HERE */}
-                </Route>
+            {getRouter()}
+              
+            
             </Switch>
         </main>
     )
