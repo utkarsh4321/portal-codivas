@@ -1,5 +1,5 @@
-
+import H2 from './Home'
 export default function(){
-    return <h2> projetos!</h2>
+    return <H2> projetos!</H2>
   }
   

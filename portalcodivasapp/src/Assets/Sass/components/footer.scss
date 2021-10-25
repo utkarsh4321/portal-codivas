@@ -2,12 +2,12 @@
 @use '../mixins' as *;
 
 .footer {
-    display:flex;
-    justify-content: space-between;
-    position: sticky;
-    bottom: 0;
-    min-height: 144px;
-    background-color: white;
+        display:flex;
+        justify-content: space-between;
+        position: sticky;
+        bottom: 0;
+        min-height: 144px;
+        background-color: white;
     @include layoutShadow('up');
     img {
         position: absolute;
@@ -22,9 +22,9 @@
     color: $color-font;
 }
 
-footer span{
-    color: rgb(25, 125, 255);
-}
+// footer span{
+//     color: rgb(25, 125, 255);
+// }
 
 
 .footer-links {
