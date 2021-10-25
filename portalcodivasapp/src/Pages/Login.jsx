@@ -2,6 +2,7 @@
 import React from "react";
 // import '../Assets/Sass/components/login.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import H2 from './Home'
 
 
 function Login() {
@@ -13,7 +14,7 @@ function Login() {
           <img src="logo.png" width={110} alt="" />
             <div class="card">
               <form onsubmit="event.preventDefault()" class="box">
-                <h2>Login</h2><br/>
+                <H2>Login</H2><br/>
                 <p class="text-muted"> Bem Vinda!</p>
                 <input type="text" name="" placeholder="Username" />
                 <input type="password" name="" placeholder="Password" />

@@ -1,3 +1,4 @@
+
 import rightArrow from "./../Assets/Images/arrow-right.png";
 import leftArrow from "./../Assets/Images/arrow-left.png";
 import { useRef } from "react";
