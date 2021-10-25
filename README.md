@@ -32,3 +32,11 @@ confira nossas idéias na aba *issues* para selecionar quais que gostaria de faz
 
 ### 👀 Website 
 [ codivas.com.br] (https://www.codivas.com.br/)
+
+
+### Project Contributors
+
+<a href="https://github.com/Codivas/portal-codivas/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Codivas/portal-codivas" />
+</a>
+
