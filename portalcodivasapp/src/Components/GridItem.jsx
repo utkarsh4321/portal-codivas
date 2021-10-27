@@ -4,7 +4,8 @@ import styled from "styled-components";
 const GridItemStyled = styled.div`
   padding: 12px;
   flex-grow: 0;
-
+  max-width: 100%; flex-basis: 100%;
+  
   @media only screen and (min-width: 960px) {
     ${({ md }) => {
       switch (md) {

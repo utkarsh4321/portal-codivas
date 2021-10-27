@@ -8,8 +8,15 @@ const Content = styled.div`
   border-radius: 4px;
   background-color: #fff;
   margin: 8px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 
-  ${({ relative }) => relative && `position: relative;`}
+  ${({ position }) => position && `position: ${position};`}
+  ${({ top }) => top && `top: ${top};`}
+  ${({ left }) => left && `left: ${left};`}
+  ${({ right }) => right && `right: ${right};`}
+  ${({ bottom }) => bottom && `bottom: ${bottom};`}
 `;
 
 export const Paper = (props) => {
