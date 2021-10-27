@@ -12,11 +12,11 @@ const MainContent = styled.main`
   overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  ${FlexCenter} & {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
+  /* ${FlexCenter} & { */
+      /* display: flex; */
+      /* justify-content: center; */
+      /* align-items: center; */
+  /* } */
 `;
 
 

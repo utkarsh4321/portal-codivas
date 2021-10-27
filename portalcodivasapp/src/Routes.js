@@ -3,6 +3,7 @@ import Home from "./Pages/Home"
 import Projects from "./Pages/Projects"
 import Login from "./Pages/Login"
 import Register from "./Pages/Register"
+import { Profile } from "./Pages/Profile";
 
 var routes = [
   {
@@ -32,6 +33,13 @@ var routes = [
     icon: "ni ni-tv-2 text-primary",
     component: Register,
     layout: "/auth",
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    icon: "ni ni-tv-2 text-primary",
+    component: Profile,
+    layout: "/admin",
   },
 
 ];
