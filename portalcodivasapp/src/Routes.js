@@ -1,9 +1,10 @@
 
-import Home from "./Pages/Home"
-import Projects from "./Pages/Projects"
-import Login from "./Pages/Login"
-import Register from "./Pages/Register"
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 import { Profile } from "./Pages/Profile";
+import {Forum} from "./Pages/Forum";
 
 var routes = [
   {
@@ -41,6 +42,13 @@ var routes = [
     component: Profile,
     layout: "/admin",
   },
+  {
+    path: "/forum",
+    name: "Forum",
+    icon: "ni ni-tv-2 text-primary",
+    component: Forum,
+    layout: "/admin",
+  }
 
 ];
 export default routes;
