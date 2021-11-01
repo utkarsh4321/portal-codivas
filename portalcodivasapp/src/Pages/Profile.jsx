@@ -11,6 +11,7 @@ import { Typography } from "../Components/Typography";
 import { Space } from "../Components/Space";
 
 import imageProfile from "../Assets/Images/manasWorking.jpg";
+import avatarProfile from "../Assets/Images/avatar.jpg";
 import styled from "styled-components";
 import { Box } from "../Components/Box";
 import { Button } from "../Components/Button";
@@ -114,7 +115,7 @@ export const Profile = () => {
           </GridItem>
           <GridItem md="4" xs="12">
             <Paper position="relative">
-              <Avatar src={imageProfile} />
+              <Avatar src={avatarProfile} />
               <Space height="70" />
               <Grid>
                 <GridItem md="4" xs="4">
