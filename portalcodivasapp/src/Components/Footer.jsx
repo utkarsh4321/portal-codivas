@@ -8,22 +8,22 @@ const Copyright = styled.span`
   color: $color-font;
 `;
 
-
 const Footers = styled.footer`
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   position: sticky;
   bottom: 0;
-  min-height: 144px;
   background-color: white;
+  padding: 1rem 2rem;
   img {
     position: absolute;
     inset: 0;
     margin: auto;
     min-width: 180px;
-  };
+  }
   ${Copyright} {
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     align-self: flex-end;
     color: #202020;
   }

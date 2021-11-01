@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 import Question from "../Components/Question";
 
@@ -6,26 +6,35 @@ const Header = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  align-items: center;
+  margin: 2rem 0rem;
 `;
 
 const Filters = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #e6e6e6;
 `;
 
 const Heading = styled.h2`
-  font-size: 54px;
+  font-size: 1.5rem;
+  @media screen and (min-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 
 const Text = styled.p`
-  font-size: 18px;
+  font-size: 1rem;
+  margin-top: 1em;
+  @media screen and (min-width: 600px) {
+    font-size: 1.5rem;
+    margin-top: 0em;
+  }
 `;
 
 const Tab = styled.button`
@@ -44,11 +53,14 @@ const Tab = styled.button`
 const Button = styled.button`
   background: #78529c;
   color: #fff;
-  font-size: 18px;
+  font-size: 1rem;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  @media screen and (min-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Forum = () => {
