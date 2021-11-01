@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import logo from "../Assets/Images/codivas-dark.png"
 
 const Copyright = styled.span`
   padding: 1rem 0 1rem 1rem;
@@ -33,8 +34,8 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <Footers>
-      <img src="logo.png" width={110} alt="" />
-      <span>
+      <img src={logo} width={110} alt="Logo Codivas" />
+      <span className="footer-links">
         © {currentYear} <Link to="/">Codivas</Link>{" "}
       </span>
       <ul className="footer-links">
