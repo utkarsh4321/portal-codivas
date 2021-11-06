@@ -9,8 +9,8 @@ import {
   faBars,
   
 } from "@fortawesome/free-solid-svg-icons";
-import AdminLayout from "./Admin";
-import AuthLayout from "./Auth";
+
+import Path from './routes/index.path'
 import "./Assets/Sass/index.scss";
 import styled from 'styled-components'
 import './fonts/SpaceGrotesk-Regular.ttf'
@@ -23,11 +23,7 @@ function App() {
   return (
     <BrowserRouter>
     <Body>
-    <Switch>
-      <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-      <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
-      <Redirect from="/" to="/admin/home" />
-    </Switch>
+        <Path />
     </Body>
   </BrowserRouter>
   );
