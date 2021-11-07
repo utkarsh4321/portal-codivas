@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { client } from "../auth/api";
+import CONSTANTS from "../constants";
 import history from '../routes/history'
 
 const AuthProvider = () => {
@@ -13,7 +14,7 @@ const AuthProvider = () => {
             localStorage.setItem('token', JSON.stringify(token))
             client.defaults.headers.authorization = `Bearer ${token}`;
             setAuth(true)
-            history.push("/portal/home")
+            history.push(CONSTANTS.APP.HOME_PAGE)
 
         } catch (error) {
             console.log('falha ao obter dados do servidor')
@@ -34,7 +35,6 @@ const AuthProvider = () => {
         if (token) {
             client.defaults.authorization = `Bearer ${JSON.parse(token)}`
             setAuth(true)
-            history.push("/portal/home")
         }
         setLoading(false)
     }, [])

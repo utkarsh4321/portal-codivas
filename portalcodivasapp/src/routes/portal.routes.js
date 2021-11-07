@@ -2,7 +2,7 @@ import Home from "../Pages/Home";
 import Projects from "../Pages/Projects";
 import { Profile } from "../Pages/Profile";
 import { Forum } from "../Pages/Forum";
-import NotFound from "../Pages/NotFound";
+
 
 export const root = "/portal"
 

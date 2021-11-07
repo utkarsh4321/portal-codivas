@@ -1,6 +1,6 @@
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
-import NotFound from "../Pages/NotFound";
+
 export const root = ""
 
 export const Pages = [

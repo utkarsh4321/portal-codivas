@@ -13,6 +13,14 @@ export const AuthProvider = ({ children }) => {
         loading
     } = AuthProviderHook();
 
+    if (loading) {
+        return (
+            <Context.Provider>
+                <h1>Carregando...</h1>
+            </Context.Provider>
+        )
+    }
+
     return (
         <Context.Provider
             value={{

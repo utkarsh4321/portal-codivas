@@ -4,19 +4,19 @@ import { useContext } from 'react'
 
 import NotFound from "../Pages/NotFound";
 import { Context } from "../context/AuthProvider"
+import isNotAutenticate from "./autorizhation"
+
 
 const CustomRoute = (props) => { // Roles
     const {
         pages: Pages,
         root,
-        isPrivate //  bolean
+        isPrivate 
     } = props;
 
     const { isAuth } = useContext(Context)
 
-    if (isPrivate && !isAuth) {
-         return <Redirect to="/" />
-    }
+    if (isNotAutenticate({ isAuth, isPrivate })) return <Redirect to="/" />
 
     return (
         <>
