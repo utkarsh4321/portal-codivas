@@ -8,7 +8,7 @@ const CustomRoute = (props) => { // Roles
     return (
         <>
             {Pages.map(Page => (
-                <Route path={root + Page.uri}>
+                <Route exact path={root + Page.uri}>
                     <Page.Component />
                 </Route>
             ))}

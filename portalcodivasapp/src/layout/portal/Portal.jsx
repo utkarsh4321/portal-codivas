@@ -16,9 +16,15 @@ const Content = () => {
 
 function PortalLayout() {
   // Links get added to mobile and normal nav
-  const links = Pages.map(({ uri, name }) => ({
-    path: root + uri,
-    text: name,
+  const links = Pages
+        .filter(({ uri }) => (
+          /* itens para remover do menu */![
+            "*"
+          ].includes(uri)
+        ))
+        .map(({ uri, name }) => ({
+            path: root + uri, 
+            text: name,
   }));
 
   return (

@@ -2,6 +2,7 @@ import { Switch, Redirect, Route } from "react-router"
 
 import PortalLayout from "../layout/portal/Portal";
 import PublicLayout from "../layout";
+import NotFound from "../Pages/NotFound";
 
 import  portal  from './portal.routes'
 import  publicRoutes  from './public.routes'
