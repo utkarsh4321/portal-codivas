@@ -1,5 +1,5 @@
 import { Pages, root } from '../routes/public.routes'
-import CustomRoute from '../routes/CustomRoute';
+import CustomRoute from '../routes/helper/CustomRoute';
 
 const CustomLayout = () => {
     return (

@@ -2,8 +2,8 @@ import { Redirect, Route, Switch } from 'react-router';
 
 import { useContext } from 'react'
 
-import NotFound from "../Pages/NotFound";
-import { Context } from "../context/AuthProvider"
+import NotFound from "../../Pages/NotFound";
+import { Context } from "../../context/AuthProvider"
 import isNotAutenticate from "./autorizhation"
 
 

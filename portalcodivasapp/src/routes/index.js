@@ -1,5 +1,5 @@
 import { Router, Switch, Route } from "react-router"
-import history from "./history"
+import history from "./helper/history"
 
 import PortalLayout from "../layout/portal/Portal";
 import PublicLayout from "../layout";
@@ -8,8 +8,7 @@ import NotFound from "../Pages/NotFound";
 import portal from './portal.routes'
 import publicRoutes from './public.routes'
 
-
-/*
+/**
   *
   * history - histórico de navegação do usuario.
   * Nova rota com multiplas paginas - para adicionar é necessário criar um arquivo nesse diretório chamado

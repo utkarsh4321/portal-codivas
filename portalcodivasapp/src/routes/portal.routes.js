@@ -3,7 +3,6 @@ import Projects from "../Pages/Projects";
 import { Profile } from "../Pages/Profile";
 import { Forum } from "../Pages/Forum";
 
-
 export const root = "/portal"
 
 export const Pages = [

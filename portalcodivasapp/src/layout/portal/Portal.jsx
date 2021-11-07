@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer";
 import { MainContainer, Layout, MainContent } from "./components/layout";
 
 import { root, Pages } from '../../routes/portal.routes'
-import CustomRoute from '../../routes/CustomRoute';
+import CustomRoute from '../../routes/helper/CustomRoute';
 
 const Content = () => {
   return (
