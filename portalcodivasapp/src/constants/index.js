@@ -4,7 +4,7 @@ const CONSTANTS = {
   API: {
     BASE: "https://proj-83c-codivas.herokuapp.com/",
     LOGIN: "/api/token/",
-    REGISTRO: "/usuario/cadastro/",
+    REGISTRO: "/users/registration/",
   },
   APP: {
     /* default home */  HOME_PAGE: "/portal/home",

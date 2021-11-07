@@ -1,28 +1,57 @@
-import { useEffect, useState } from "react";
+import { useState, useContext } from "react";
 import { client } from "../auth/api";
 import  CONSTANTS  from "../constants/index";
+
+
+import { Context } from "../context/AuthProvider";
+
 
 const RegisterHook = () => {
   const [userName, setUserName] = useState(false);
   const [userEmail, setUserEmail] = useState(false);
   const [userPassword, setUserPassword] = useState(false);
 
-  useEffect(() => {
-    client
-      .post(`${CONSTANTS.API.REGISTRO}`, {
-        user_name: "camis21",
-        password: "senha",
-        email: "email@email43.com.br",
-      })
-      .then((response) => response.data)
-      .then((data) => console.log(data))
-      .catch((error) => console.log(error.message));
-  }, []);
+  const { handleLogin : handleLoginProvider } = useContext(Context)
+
+  const handleUserName = event => {
+      event.preventDefault(); // travo o comportamento padrao do dom
+      setUserName(event.target.value)
+  }
+  const handleEmail = event => {
+      event.preventDefault(); // travo o comportamento padrao do dom
+      setUserEmail(event.target.value)
+  }
+  
+  const handlePassword = event => {
+      event.preventDefault(); // travo o comportamento padrao do dom
+      setUserPassword(event.target.value)
+  }
+
+  const RegisterProvider = async (body) => {
+    try {
+      await client.post(CONSTANTS.API.REGISTRO, body) 
+      handleLoginProvider(userEmail, userPassword)
+    } catch (error) {
+      alert("Tivemos um problema ao solicitar sua requisição\ndetalhes do error: " + error.message)
+    }
+  }
+  
+  const handleRegister = event => {
+    event.preventDefault(); // travo o comportamento padra
+
+    RegisterProvider({
+       "user_name" : userName,
+       "password" : userPassword,
+       "email" : userEmail
+    })
+
+  }
 
   return {
-    userName,
-    userEmail,
-    userPassword,
+      handleUserName,
+      handlePassword,
+      handleEmail,
+      handleRegister,
   };
 };
 
