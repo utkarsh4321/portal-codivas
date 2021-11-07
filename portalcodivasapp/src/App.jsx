@@ -10,7 +10,7 @@ import {
   
 } from "@fortawesome/free-solid-svg-icons";
 
-import Path from './routes/index.path'
+import Routes from './routes'
 import "./Assets/Sass/index.scss";
 import styled from 'styled-components'
 import './fonts/SpaceGrotesk-Regular.ttf'
@@ -23,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
     <Body>
-        <Path />
+        <Routes />
     </Body>
   </BrowserRouter>
   );

@@ -1,4 +1,3 @@
-
 import Home from "../Pages/Home";
 import Projects from "../Pages/Projects";
 import { Profile } from "../Pages/Profile";
@@ -33,7 +32,4 @@ export const Pages = [
     },
 ];
 
-
-
-
-export default Pages
+export default root
