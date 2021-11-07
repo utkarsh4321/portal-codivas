@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+
 
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -7,13 +7,15 @@ import {
   faBell,
   faUserAlt,
   faBars,
-  
+
 } from "@fortawesome/free-solid-svg-icons";
-import AdminLayout from "./Admin";
-import AuthLayout from "./Auth";
+
+import Routes from './routes'
 import "./Assets/Sass/index.scss";
 import styled from 'styled-components'
 import './fonts/SpaceGrotesk-Regular.ttf'
+
+import { AuthProvider } from './context/AuthProvider'
 
 function App() {
   library.add([faSearch, faPaperPlane, faBell, faUserAlt, faBars]);
@@ -21,15 +23,11 @@ function App() {
   // Links get added to mobile and normal nav
 
   return (
-    <BrowserRouter>
-    <Body>
-    <Switch>
-      <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-      <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
-      <Redirect from="/" to="/admin/home" />
-    </Switch>
-    </Body>
-  </BrowserRouter>
+    <AuthProvider>
+      <Body>
+        <Routes />
+      </Body>
+    </AuthProvider>
   );
 }
 

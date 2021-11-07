@@ -1,6 +1,8 @@
 import { Switch, Route } from "react-router-dom";
-import Links from "../Routes";
+import { Routes } from "../routes/index.routes";
 import styled from "styled-components";
+
+
 
 const FlexCenter = styled.div`
   display: flex;
@@ -20,20 +22,10 @@ const MainContent = styled.main`
 `;
 
 
-const getRouter = () => {
-  return Links.filter((path) => path.layout === "/admin").map((path) => {
-    return (
-      <Route path={path.layout + path.path}>
-        <path.component />
-      </Route>
-    );
-  });
-};
-
 const Content = () => {
   return (
     <MainContent className="main-content">
-      <Switch>{getRouter()}</Switch>
+      <Pages />
     </MainContent>
   );
 };
