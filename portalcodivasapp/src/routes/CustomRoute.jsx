@@ -1,17 +1,35 @@
-import { Route } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
+
+import { useContext } from 'react'
+
+import NotFound from "../Pages/NotFound";
+import { Context } from "../context/AuthProvider"
+
 const CustomRoute = (props) => { // Roles
     const {
         pages: Pages,
         root,
         isPrivate //  bolean
     } = props;
+
+    const { isAuth } = useContext(Context)
+
+    if (isPrivate && !isAuth) {
+         return <Redirect to="/" />
+    }
+
     return (
         <>
-            {Pages.map(Page => (
-                <Route exact path={root + Page.uri}>
-                    <Page.Component />
-                </Route>
-            ))}
+            <Switch>
+                {Pages.map(Page => (
+                    <Route
+                        exact
+                        path={root + Page.uri}
+                        component={Page.Component}
+                    />
+                ))}
+                <Route component={NotFound} />
+            </Switch>
         </>
     )
 }

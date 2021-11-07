@@ -1,6 +1,7 @@
 const CONSTANTS = {
   API: {
-    BASE: "https://logf01.herokuapp.com",
+    BASE: "http://localhost:3535/",
+    LOGIN: "/login",
     REGISTRO: "/usuario/cadastro/",
   },
 };

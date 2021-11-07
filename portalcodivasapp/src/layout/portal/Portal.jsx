@@ -9,7 +9,7 @@ import CustomRoute from '../../routes/CustomRoute';
 const Content = () => {
   return (
     <MainContent className="main-content">
-      <CustomRoute pages={Pages} root={root} isPrivate={false} />
+      <CustomRoute pages={Pages} root={root} isPrivate={true} />
     </MainContent>
   );
 };

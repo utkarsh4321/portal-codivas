@@ -33,11 +33,4 @@ export const Pages = [
     },
 ];
 
-/* Essa pagina precisa ser a ultima */ Pages.push({
-    uri: "*",
-    name: "NotFound",
-    icon: "ni ni-tv-2 text-primary",
-    Component: NotFound,
-  })
-
 export default root

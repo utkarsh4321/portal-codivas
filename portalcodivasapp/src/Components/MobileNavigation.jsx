@@ -12,7 +12,7 @@ const MobileNavigation = ({links}) => {
         <Dropdown.Menu>
             {links.map(link => (
                 <Dropdown.Item className="burger-link">
-                    <Link to={link.path}>
+                    <Link to={link.path} key={Math.random().toString(16)}>
                         {link.text}
                     </Link>
                 </Dropdown.Item>
