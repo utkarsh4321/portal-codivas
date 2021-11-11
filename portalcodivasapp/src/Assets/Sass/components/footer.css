@@ -21,6 +21,9 @@
   color: #202020;
 }
 
+footer{
+  font-family:'Merriweather Sans';
+}
 footer span {
   color: #197dff;
 }
