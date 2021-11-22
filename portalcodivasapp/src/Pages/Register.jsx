@@ -1,8 +1,26 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-//import '../Assets/Sass/components/login.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import RegisterHook from "../hooks/RegisterHook";
+import styled from "styled-components";
+
+export const Forms =  styled.div`
+  border-radius:0px 50px 0px 50px;
+  box-shadow: 10px 10px 10px 5px #080808;
+  margin-top:10px;  
+`;
+
+export const Input = styled.input`
+    padding: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background: ${props => props.primary ? "palevioletred" : "#9b59b6" };
+    color: #fff;
+    margin: 20px;
+    font-weight: bold;
+`; 
+
 
 function Register() {
   const {
@@ -13,42 +31,30 @@ function Register() {
 } = RegisterHook()
 
   return (
-    <>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-          <img src="logo.png" width={110} alt="" />
-            <div className="card">
-              <form onSubmit={handleRegister} className="box">
-                <h2>Cadastre - se </h2><br/>
-                <p className="text-muted"> Bem Vinda!</p>
-                <input type="email" name="email" placeholder="Email" required onChange={handleEmail} />
+    <div className="container d-flex mt-5 flex-column align-items-center">
+			<img src="logo.png" width={180} alt="Codivas" className="mb-3" />
+			<Forms onSubmit={handleRegister} className=" d-flex flex-column border p-5 " style={{ height: "450px", textAlign: "center" }}>
+				<div class="form-group d-flex flex-column justify-content-between" style={{ height: "450px", border: "1px solid transparent" }}>
+					<p className="text-muted">Bem Vinda CODIVAS!</p>
+					<input type="email" name="email" placeholder="E-mail" required onChange={handleEmail} />
                 <input type="text" name="username" placeholder="Username" required onChange={handleUserName} />
                 <input type="password" name="password" placeholder="Password" required onChange={handlePassword} />
-                {/* <a className="forgot text-muted" href="#">
-                  Esqueceu a senha?
-                </a> */}
-                <input type="submit" name="submit" value="Register" />
-                <div className="col-md-12">
-                  <ul className="social-network social-circle">
-                    <li>
-                      <a href="#" className="icoFacebook" title="Facebook">
-                        <FontAwesomeIcon icon={["fa", "bell"]} />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="icoGoogle" title="Google +">
-                      <FontAwesomeIcon icon={["fa", "user-alt"]} />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+                <Input type="submit" name="submit" value="Register" />
+				</div>
+				<ul className="social-network social-circle d-flex mt-2 justify-content-around">
+					<li>
+						<a href="https://github.com/Codivas" className="icoGitHub" title="Github">
+							<FontAwesomeIcon icon={["fa", "code-branch"]} />
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/coletivo.codivas/" className="icoInstagram" title="Instagran">
+							<FontAwesomeIcon icon={["fa", "camera-retro"]} />
+						</a>
+					</li>
+				</ul>
+			</Forms>
+		</div>
   );
 }
 
