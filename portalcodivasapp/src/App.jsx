@@ -7,6 +7,8 @@ import {
   faBell,
   faUserAlt,
   faBars,
+  faCodeBranch,
+  faCameraRetro,
 
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,7 +20,7 @@ import './fonts/SpaceGrotesk-Regular.ttf'
 import { AuthProvider } from './context/AuthProvider'
 
 function App() {
-  library.add([faSearch, faPaperPlane, faBell, faUserAlt, faBars]);
+  library.add([faSearch, faPaperPlane, faBell, faUserAlt, faBars, faCodeBranch,faCameraRetro]);
   dom.watch();
   // Links get added to mobile and normal nav
 
