@@ -31,7 +31,7 @@ function PortalLayout() {
     <Layout>
       <Navigation links={links} />
       <MainContainer>
-        <Header links={links} />
+       <Header links={links} />
         <Content />
         <Footer />
       </MainContainer>
