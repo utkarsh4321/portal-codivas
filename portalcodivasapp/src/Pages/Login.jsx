@@ -6,7 +6,7 @@ import H2 from "./Home";
 import LoginHooks from "../hooks/LoginHooks";
 import styled from "styled-components";
 
-export const Forms =  styled.div`
+export const Forms =  styled.form`
   border-radius:0px 50px 0px 50px;
   box-shadow: 10px 10px 10px 5px #080808;
   margin-top:10px;  

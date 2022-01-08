@@ -12,8 +12,7 @@ const LoginHooks = () => {
 
     const handleLogin = (event) => {
         event.preventDefault()
-       handleLoginProvider(email, password)
-        setError(error)
+        handleLoginProvider(email, password)
     }
 
     const handleEmail = (event) => {
