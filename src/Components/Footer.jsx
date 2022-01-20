@@ -16,12 +16,12 @@ const Footers = styled.footer`
   position: sticky;
   bottom: 0;
   background-color: white;
-  padding: 1rem 2rem;
+  padding: 1rem ;
   img {
     position: absolute;
     inset: 0;
-    margin: auto;
-    min-width: 180px;
+    margin:auto;
+   
   }
   ${Copyright} {
     padding: 1rem 1rem 1rem 1rem;

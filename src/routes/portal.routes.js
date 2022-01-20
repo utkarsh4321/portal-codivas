@@ -2,6 +2,7 @@ import Home from "../Pages/Home";
 import Projects from "../Pages/Projects";
 import { Profile } from "../Pages/Profile";
 import { Forum } from "../Pages/Forum";
+import Codivas from "../Pages/Codivas";
 
 export const root = "/portal"
 
@@ -29,6 +30,12 @@ export const Pages = [
         name: "Forum",
         icon: "ni ni-tv-2 text-primary",
         Component: Forum,
+    },
+    {
+        uri: "/codivas",
+        name: "Codivas",
+        icon: "ni ni-tv-2 text-primary",
+        Component: Codivas,
     },
 ];
 
