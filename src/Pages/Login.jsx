@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import H2 from "./Home";
 import LoginHooks from "../hooks/LoginHooks";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Forms =  styled.form`
   border-radius:0px 50px 0px 50px;
@@ -38,6 +39,7 @@ function Login() {
 						Esqueceu a senha?
 					</a>
 					<Input type="submit" name="" value="Login" />
+					<p className="mb-3">Não tem conta? <Link to="/registro" className="nav-link d-inline">Registe-se agora</Link></p>
 				</div>
 
 				<ul className="social-network social-circle d-flex mt-2 justify-content-around">
