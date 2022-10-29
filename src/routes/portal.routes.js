@@ -1,8 +1,6 @@
 import Home from "../Pages/Home";
-import Projects from "../Pages/Projects";
-import { Profile } from "../Pages/Profile";
-import { Forum } from "../Pages/Forum";
 import Codivas from "../Pages/Codivas";
+import Contato from "../Pages/Contato";
 
 export const root = "/portal"
 
@@ -14,29 +12,19 @@ export const Pages = [
         Component: Home,
     },
     {
-        uri: "/projects",
-        name: "Projects",
-        icon: "ni ni-tv-2 text-primary",
-        Component: Projects,
-    },
-    {
-        uri: "/profile",
-        name: "Profile",
-        icon: "ni ni-tv-2 text-primary",
-        Component: Profile,
-    },
-    {
-        uri: "/forum",
-        name: "Forum",
-        icon: "ni ni-tv-2 text-primary",
-        Component: Forum,
-    },
-    {
         uri: "/codivas",
         name: "Codivas",
         icon: "ni ni-tv-2 text-primary",
         Component: Codivas,
     },
+    {
+        uri: "/contato",
+        name: "Contato",
+        icon: "ni ni-tv-2 text-primary",
+        Component: Contato,
+    },
+    
+    
 ];
 
 export default root
