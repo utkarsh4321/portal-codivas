@@ -5,7 +5,10 @@ import backgroundCodivas from '../Assets/Images/manasWorking.jpg'
 const Main = styled.div`
  display: flex;
  justify-content: center;
-
+img{
+  width:100vw;
+  margin-top: -100px;
+}
 `
 const Home = () => {
   return (
