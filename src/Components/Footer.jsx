@@ -48,13 +48,13 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a
+          {/* <a
             href="https://blog.codivas.com.br"
             target="_blank"
             rel="noreferrer"
           >
             Blogs
-          </a>
+          </a> */}
         </li>
       </ul>
     </Footers>
