@@ -47,7 +47,7 @@ function Login() {
 						</a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com/coletivo.codivas/" className="icoInstagram" title="Instagran">
+						<a href="https://www.instagram.com/as.codivas/" className="icoInstagram" title="Instagran">
 							<FontAwesomeIcon icon={["fa", "camera-retro"]} />
 						</a>
 					</li>
