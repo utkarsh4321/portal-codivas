@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import RegisterHook from "../hooks/RegisterHook";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const Forms =  styled.div`
   border-radius:0px 50px 0px 50px;
   box-shadow: 10px 10px 10px 5px #080808;
@@ -41,6 +41,7 @@ function Register() {
                 <input type="password" name="password" placeholder="Password" required onChange={handlePassword} />
                 <Input type="submit" name="submit" value="Register" />
 				</div>
+        <p className="mb-3">Já tem uma conta? <Link to="/" className="nav-link d-inline">Login</Link></p>
 				<ul className="social-network social-circle d-flex mt-2 justify-content-around">
 					<li>
 						<a href="https://github.com/Codivas" className="icoGitHub" title="Github">
