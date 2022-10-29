@@ -28,7 +28,10 @@ const Header = ({links}) => {
                 </div>
                 <div className="profile">
                     <div className="profile-icon icon-button">
+                        <a href='./profile'>
+
                         <FontAwesomeIcon icon={["fa", "user-alt"]} />
+                        </a>
                     </div>
                     <span className="name">Name</span>
                 </div>
