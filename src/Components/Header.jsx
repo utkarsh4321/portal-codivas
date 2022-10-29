@@ -9,7 +9,7 @@ const Header = ({links}) => {
         <header className="header">
             <MobileNavigation links={links}/>
             <div className="search">
-                <InputGroup className="mx-3">
+                {/* <InputGroup className="mx-3">
                     <FormControl
                     aria-label="Search"
                     aria-describedby="search-input"
@@ -17,20 +17,20 @@ const Header = ({links}) => {
                     <InputGroup.Text id="search-input">
                         <FontAwesomeIcon icon={["fa", "search"]} />
                     </InputGroup.Text>
-                </InputGroup>
+                </InputGroup> */}
             </div>
             <div className="user">
                 <div className="notifications icon-button">
-                    <FontAwesomeIcon icon={["fa", "bell"]} />
+                    {/* <FontAwesomeIcon icon={["fa", "bell"]} /> */}
                 </div>
                 <div className="messages icon-button">
-                    <FontAwesomeIcon icon={["fa", "paper-plane"]} />
+                    {/* <FontAwesomeIcon icon={["fa", "paper-plane"]} /> */}
                 </div>
                 <div className="profile">
-                    <span className="name">Name</span>
                     <div className="profile-icon icon-button">
                         <FontAwesomeIcon icon={["fa", "user-alt"]} />
                     </div>
+                    <span className="name">Name</span>
                 </div>
             </div>
         </header>
